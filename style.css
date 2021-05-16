@@ -5,15 +5,16 @@ body {
 }
 
 h2 {
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 600;
   margin: 0 10px 10px 10px;
   text-align: center;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 900;
+  margin-left: 25px;
 }
 
 p {
@@ -31,7 +32,8 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 90%;
+  padding: 25px;
 }
 
 /* ---  Groups & Items --- */
@@ -64,8 +66,24 @@ header {
   color: #fff;
 }
 
+.centered {
+  display: block;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+  padding-left: 0px;
+}
+
 header nav ul li {
+  font-size: 15pt;
   list-style-type: none;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 header nav ul li a {
@@ -80,19 +98,31 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
+
 form {
+  display: inline-block;
+  text-align: left;
+  width: 340px;
   border: 2px solid #ff385c;
-  padding: 10px;
+  padding: 20px;
 }
 
 form label {
   font-weight: bold;
+  font-size: 13pt;
+  padding: 0px;
+  flex-wrap: wrap;
 }
 
 form select,
 form input {
+  display: flex;
+  position: relative;
+  bottom: 20px;
+  left: 125px;
+  flex-wrap: wrap;
   margin-bottom: 20px;
-  width: 180px;
+  width: 200px;
 }
 
 form button {
@@ -117,3 +147,77 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 600px) {
+  .logo {
+    text-align: left;
+  }
+  
+  .middle {
+    display: flex;
+    align-items: center
+  }
+
+  .vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  ul {
+    margin-top: 25px;
+    padding-left: 100px;
+    width: 100%;
+  }
+
+  .centered {
+    display: flex;
+    margin: 20px 15px 25px 15px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  form input, 
+  form select {
+    position: relative;
+    height: 25px;
+    top: 7px;
+    left: 10px;
+    margin-right: 10px
+  }
+
+  form button {
+    margin: 10px;
+    width: 200px;
+  }
+  
+  .group {
+    flex-direction: row;
+  }
+
+  img {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+/*
+Debugger
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
