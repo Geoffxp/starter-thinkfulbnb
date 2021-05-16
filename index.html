@@ -36,8 +36,8 @@
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
         <div class="centered">
-          <form>
-            <div>
+          <form class="group">
+            <div class="item-double inline">
               <label class="item" for="location">Location</label>
               <input class ="item-double"
                 id="location"
@@ -45,7 +45,7 @@
                 name="location"
                 placeholder="Search destination" />
             </div>
-            <div>
+            <div class="item-double inline">
               <label class="item" for="arrive">Arrive</label>
               <input class ="item-double"
                 id="arrive"
@@ -53,7 +53,7 @@
                 name="arrive"
                 placeholder="mm/dd/yyyy" />
             </div>
-            <div>
+            <div class="item-double inline">
               <label class="item" for="depart">Depart</label>
               <input class ="item-double"
                 id="depart"
@@ -61,9 +61,9 @@
                 name="depart"
                 placeholder="mm/dd/yyyy" />
             </div>
-            <div>
+            <div class="item-double inline">
               <label class="item" for="type">Type</label>
-              <select name="places" id="places">
+              <select class ="item-double" name="places" id="places">
                 <option value="Apartment">Apartment</option>
                 <option value="Barn">Barn</option>
                 <option value="Castle">Castle</option>
@@ -72,8 +72,8 @@
                 <option value="Yacht">Yacht</option>
                 <option value="Yurt">Yurt</option>
               </select>
-            </div> 
-            <div>
+            </div>
+            <div class="item">
               <button type="submit">Search</button>
             </div>
           </form>
