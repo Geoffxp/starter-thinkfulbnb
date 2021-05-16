@@ -223,13 +223,14 @@ footer p {
     display: block;
     margin-top: 15px;
   }
+  
+  .inline {
+    display: block;
+    margin-top: 15px;
+  }
+  
   .group {
     flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .groupspreader {
-    display: flex;
     justify-content: space-between;
   }
 
