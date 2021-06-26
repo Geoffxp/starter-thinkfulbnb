@@ -16,30 +16,6 @@ The UX designer provided you with the following user interface mockups:
 
 ![](images/Thinkfulbnb-desktop.png)
 
-### Existing files
-
-| File         | Description                                                             |
-| ------------ | ----------------------------------------------------------------------- |
-| `images/`    | A folder containing all the images used for the design.                 |
-| `index.html` | The starter HTML file. You will need to add your solution to this file. |
-| `style.css`  | The starter css file. You will need to add your solution to this file.  |
-
-You're encouraged to spend some time studying the provided files.
-
-### Setup
-
-Use VSCode Live Server to launch the `index.html` page in your browser.
-
-### Tasks
-
-For this assignment, you will be following a mobile-first development approach. To pass this assignment, you must complete the tasks detailed below.
-
-You **should** use flexbox, and **not** floats, to achieve the desired layouts. The `.group`, `.item`, and `.item-double` classes are provided in the CSS file for your convenience, but it is not necessary to use them.
-
-You are **NOT** expected to match the designs pixel by pixel, as long as the required layout is satisfied.
-
-Edit the `index.html` and `style.css` as needed to achieve the following requirements:
-
 #### Navigation
 
 - The logo should stack on top of the menu links, which are aligned horizontally, as follows:
@@ -72,11 +48,6 @@ Edit the `index.html` and `style.css` as needed to achieve the following require
     - Yurt
   - a `"Search"` button
 
-- Some CSS styles have already been written for you to help style your form. Add CSS to the form so that
-  - the labels (i.e., "Location", "Arrive", "Depart", "Type") and their corresponding form fields are aligned towards the opposite ends of each row
-
-Your final form design should look as follows:
-
 ![Search form mobile](./images/search-form-mobile.png)
 
 #### Vertical content alignment
@@ -85,17 +56,11 @@ Your final form design should look as follows:
 
 #### Responsive images
 
-- Write CSS for all images so that the images will match whatever container width they are placed within, and changing the container sizes will update the image sizes appropriately.
+- All images match whatever container width they are placed within, and changing the container sizes will update the image sizes appropriately.
 
 #### Media query: Desktop view
 
-Now that your mobile design is looking good, you will need to adapt the design for the desktop view.
-
-- In `style.css`, create a media query for screens that are wider than `480px`.
-
-Within the media query, write CSS to create the following designs for desktop:
-
-- The logo and the navigation menu links should be spaced apart from each other, like this:
+The logo and the navigation menu links should be spaced apart from each other, like this:
 
 ![Navigation desktop](./images/navigation-desktop.png)
 
